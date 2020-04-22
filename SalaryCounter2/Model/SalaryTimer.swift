@@ -20,6 +20,7 @@ struct SalaryTimer: TimerCountable {
     } else
     {return false}
   }
+  ///Ну ты бро даееешь, колесики за 70 тысяч. Я чуть не поседел...
   
   /// Вычисляемая при обращении к ней переменная - разница в секундах между датой зарплаты  и следующей датой зарплаты. То бишь дата ЗП + месяц вперед и получаем разница в секундах.
   var differnceInSecondsSincePayToNextPay: Int {
@@ -44,7 +45,7 @@ struct SalaryTimer: TimerCountable {
   /// Собстно дата зарплаты
   var dayOfSalary: Int = 1
   ///Собстно зряплата
-  var salaryAmount: Double = 63666
+  var salaryAmount: Double = 30000
   /// Вычисляется при обращении - зарплата в секунду
   var salaryPerSecond: Double {
     return self.salaryAmount/Double(differnceInSecondsSincePayToNextPay)
@@ -78,7 +79,4 @@ struct SalaryTimer: TimerCountable {
     }
     
   }
-
-
-  
 }

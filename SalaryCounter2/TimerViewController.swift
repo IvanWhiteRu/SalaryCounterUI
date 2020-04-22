@@ -22,12 +22,10 @@ class TimerViewController: UIViewController {
     var moneyGatheredSinceNow: Double = 0
     
     @objc func counter() {
-      
        let textForGSLPL = container!.moneyGatheredSinceLastPay + moneyGatheredSinceNow
       gatheredSinceLastPayLabel.text = String(format: "%.0f", textForGSLPL)
       gatheredSinceNowLabel.text = String(format: "%.2f", self.moneyGatheredSinceNow)
             moneyGatheredSinceNow += container?.salaryPerSecond ?? 0.0
-      
     }
   
    
@@ -45,7 +43,7 @@ class TimerViewController: UIViewController {
         
         dayLabel.text = dayDate()
        monthLabel.text = monthDate()
-        
+      
         super.viewDidLoad()
      //
         if container != nil {

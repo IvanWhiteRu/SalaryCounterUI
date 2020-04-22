@@ -14,7 +14,6 @@ class EditViewController: UIViewController {
     @IBOutlet weak var dayOfSalaryTextField: UITextField!
     var timer = SalaryTimer()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
